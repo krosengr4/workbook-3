@@ -18,7 +18,7 @@ public class fileScanner {
         FileInputStream fis = null;
         try {
             //Create FileInput Stream that points to a specific file.
-            fis = new FileInputStream("C:/Users/rosen/pluralsight/workbook-3/ClassNotes/src/main/java/com/pluralsight/fileScanner/poem.txt");
+            fis = new FileInputStream("/Users/rosen/pluralsight/workbook-3/ClassNotes/src/main/java/com/pluralsight/fileScanner/poem.txt");
 
             //Create an instance of scanner to read the file above
             Scanner myScanner = new Scanner(fis);
@@ -38,6 +38,5 @@ public class fileScanner {
         } catch (Exception e) {
             System.out.println("ERROR! File was not found.");
         }
-
     }
 }
