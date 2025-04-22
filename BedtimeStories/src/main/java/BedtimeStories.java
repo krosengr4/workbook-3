@@ -1,4 +1,3 @@
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Scanner;
 
@@ -16,13 +15,13 @@ public class BedtimeStories {
         // switch case to handle user input
         switch (userInput) {
             case 1:
-                readGoldilocks();
+                readGoldilocks("/DataFiles/goldilocks.txt");
                 break;
             case 2:
-                readHanselAndGretel();
+                readHanselAndGretel("/DataFiles/hansel_and_gretel.txt");
                 break;
             case 3:
-                readMaryHadLittleLamb();
+                readMaryHadLittleLamb("/DataFiles/mary_had_a_little_lamb.txt");
                 break;
             default:
                 System.out.println("ERROR: Please choose a number between 1-3!");
@@ -30,9 +29,9 @@ public class BedtimeStories {
     }
 
     // Method to print out goldilocks story
-    static void readGoldilocks() {
+    static void readGoldilocks(String fileName) {
 
-        InputStream is = BedtimeStories.class.getResourceAsStream("/DataFiles/goldilocks.txt");
+        InputStream is = BedtimeStories.class.getResourceAsStream(fileName);
 
         try (Scanner readStory = new Scanner(is)) {
 
@@ -51,9 +50,9 @@ public class BedtimeStories {
     }
 
     // Method to print out hansel and gretel story
-    static void readHanselAndGretel() {
+    static void readHanselAndGretel(String fileName) {
 
-        InputStream is = BedtimeStories.class.getResourceAsStream("/DataFiles/hansel_and_gretel.txt");
+        InputStream is = BedtimeStories.class.getResourceAsStream(fileName);
 
         try (Scanner readStory = new Scanner(is)) {
 
@@ -71,9 +70,9 @@ public class BedtimeStories {
     }
 
     // Method to print out mary had a little lamb story
-    static void readMaryHadLittleLamb() {
+    static void readMaryHadLittleLamb(String fileName) {
 
-        InputStream is = BedtimeStories.class.getResourceAsStream("/DataFiles/mary_had_a_little_lamb.txt");
+        InputStream is = BedtimeStories.class.getResourceAsStream(fileName);
 
         try (Scanner readStory = new Scanner(is)) {
 
