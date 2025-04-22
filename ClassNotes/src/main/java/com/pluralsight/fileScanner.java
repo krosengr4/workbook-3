@@ -9,7 +9,6 @@ public class fileScanner {
     public static void main(String[] args) {
 
 //        fileIo();
-
         fileScanner();
     }
 
@@ -17,10 +16,6 @@ public class fileScanner {
     static void fileScanner() {
         InputStream is = fileScanner.class.getResourceAsStream("/poem.txt");
 
-//        if (is == null) {
-//            System.out.println("ERROR! File not Found!");
-//            return;
-//        }
         try (Scanner myScanner = new Scanner(is)) {
             while (myScanner.hasNextLine()) {
                 System.out.println(myScanner.nextLine());

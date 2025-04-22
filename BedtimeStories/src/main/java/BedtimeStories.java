@@ -15,21 +15,21 @@ public class BedtimeStories {
         // switch case to handle user input
         switch (userInput) {
             case 1:
-                readGoldilocks("/DataFiles/goldilocks.txt");
+                readStory("/DataFiles/goldilocks.txt");
                 break;
             case 2:
-                readHanselAndGretel("/DataFiles/hansel_and_gretel.txt");
+                readStory("/DataFiles/hansel_and_gretel.txt");
                 break;
             case 3:
-                readMaryHadLittleLamb("/DataFiles/mary_had_a_little_lamb.txt");
+                readStory("/DataFiles/mary_had_a_little_lamb.txt");
                 break;
             default:
                 System.out.println("ERROR: Please choose a number between 1-3!");
         }
     }
 
-    // Method to print out goldilocks story
-    static void readGoldilocks(String fileName) {
+    // Method to print out story
+    static void readStory(String fileName) {
 
         InputStream is = BedtimeStories.class.getResourceAsStream(fileName);
 
@@ -47,45 +47,5 @@ public class BedtimeStories {
             System.out.println("ERROR! File was not found!");
         }
 
-    }
-
-    // Method to print out hansel and gretel story
-    static void readHanselAndGretel(String fileName) {
-
-        InputStream is = BedtimeStories.class.getResourceAsStream(fileName);
-
-        try (Scanner readStory = new Scanner(is)) {
-
-            String input;
-            int i = 1;
-
-            while (readStory.hasNextLine()) {
-                input = readStory.nextLine();
-                System.out.println(i + "." + input);
-                i++;
-            }
-        } catch (Exception e) {
-            System.out.println("ERROR! File was not found!");
-        }
-    }
-
-    // Method to print out mary had a little lamb story
-    static void readMaryHadLittleLamb(String fileName) {
-
-        InputStream is = BedtimeStories.class.getResourceAsStream(fileName);
-
-        try (Scanner readStory = new Scanner(is)) {
-
-            String input;
-            int i = 1;
-
-            while (readStory.hasNextLine()) {
-                input = readStory.nextLine();
-                System.out.println(i + "." + input);
-                i++;
-            }
-        } catch (Exception e) {
-            System.out.println("ERROR! File was not found!");
-        }
     }
 }
