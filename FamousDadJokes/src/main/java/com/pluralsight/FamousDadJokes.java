@@ -23,45 +23,51 @@ public class FamousDadJokes {
 
         System.out.println("Choose a number from 1-10 for a dad joke: ");
         int jokeNumber = myScanner.nextInt();
-        
 
-        switch (jokeNumber) {
-            case 1:
-                System.out.println(dadJokes[0]);
-                break;
-            case 2:
-                System.out.println(dadJokes[1]);
-                break;
-            case 3:
-                System.out.println(dadJokes[2]);
-                break;
-            case 4:
-                System.out.println(dadJokes[3]);
-                break;
-            case 5:
-                System.out.println(dadJokes[4]);
-                break;
-            case 6:
-                System.out.println(dadJokes[5]);
-                break;
-            case 7:
-                System.out.println(dadJokes[6]);
-                break;
-            case 8:
-                System.out.println(dadJokes[7]);
-                break;
-            case 9:
-                System.out.println(dadJokes[8]);
-                break;
-            case 10:
-                System.out.println(dadJokes[9]);
-                break;
-            default:
-                System.out.println("ERROR! Must print a number between 1-10");
+        String userChoice = "y";
+
+        while (userChoice == "y") {
+
+            switch (jokeNumber) {
+                case 1:
+                    System.out.println(dadJokes[0]);
+                    break;
+                case 2:
+                    System.out.println(dadJokes[1]);
+                    break;
+                case 3:
+                    System.out.println(dadJokes[2]);
+                    break;
+                case 4:
+                    System.out.println(dadJokes[3]);
+                    break;
+                case 5:
+                    System.out.println(dadJokes[4]);
+                    break;
+                case 6:
+                    System.out.println(dadJokes[5]);
+                    break;
+                case 7:
+                    System.out.println(dadJokes[6]);
+                    break;
+                case 8:
+                    System.out.println(dadJokes[7]);
+                    break;
+                case 9:
+                    System.out.println(dadJokes[8]);
+                    break;
+                case 10:
+                    System.out.println(dadJokes[9]);
+                    break;
+                default:
+                    System.out.println("ERROR! Must print a number between 1-10");
+
+            }
+
+            System.out.println("\n Would you like to hear another joke? (enter y or n): ");
+            userChoice = myScanner.next();
+            userChoice = userChoice.toLowerCase();
 
         }
-
-
     }
-
 }
