@@ -24,7 +24,7 @@ public class BedtimeStories {
                 readStory("/DataFiles/mary_had_a_little_lamb.txt");
                 break;
             default:
-                System.out.println("ERROR: Please choose a number between 1-3!");
+                System.err.println("ERROR: Please choose a number between 1-3!");
         }
     }
 
@@ -44,7 +44,7 @@ public class BedtimeStories {
                 i++;
             }
         } catch (Exception e) {
-            System.out.println("ERROR! File was not found!");
+            System.err.println("ERROR! File was not found!");
         }
 
     }
