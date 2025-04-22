@@ -7,6 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/FamousDadJokes/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/FamousDadJokes/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/FamousDadJokes/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/BedtimeStories/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BedtimeStories/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/BedtimeStories/src/test" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
