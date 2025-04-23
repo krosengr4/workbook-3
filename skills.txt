@@ -1,0 +1,4 @@
+Skills: 
+Git, HTML, CSS, Bootstrap
+JavaScript/ES6, jQuery, REST API, Node.js
+Python, Java
