@@ -10,6 +10,7 @@ public class WritingToFiles {
         try{
             //open the file writer
             FileWriter writer = new FileWriter("\\Users\\rosen\\pluralsight\\workbook-3\\ClassNotes\\src\\main\\resources\\skills.txt");
+//            FileWriter writer = new FileWriter("skills.txt");
 
             //write to the file
             writer.write("Skills: \n");
