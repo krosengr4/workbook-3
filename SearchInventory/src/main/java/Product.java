@@ -24,9 +24,4 @@ public class Product {
         return price;
     }
     //endregion
-
-
-
-
-
 }

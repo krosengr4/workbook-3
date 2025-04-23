@@ -11,6 +11,7 @@ public class Store {
 
         System.out.println("We carry the following inventory: ");
 
+        //For loop that prints out every product's attributes
         for (int i = 0; i < inventory.size(); i++) {
             Product p = inventory.get(i);
             System.out.printf("id: %d %s - Price: $%.2f", p.getId(), p.getName(), p.getPrice());
@@ -19,6 +20,7 @@ public class Store {
 
     public static ArrayList<Product> getInventory() {
 
+        //Create an array list that contains the Product object
         ArrayList<Product> inventory = new ArrayList<Product>();
 
         //Create new products to put into inventory
@@ -36,7 +38,6 @@ public class Store {
         inventory.add(sourCream);
 
         return inventory;
-
     }
 
 }
