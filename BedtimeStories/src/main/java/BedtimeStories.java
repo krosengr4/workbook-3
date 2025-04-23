@@ -5,27 +5,34 @@ public class BedtimeStories {
 
     public static void main(String[] args) {
 
+        int i;
+        String[][] books = {
+                {
+                        "Goldilocks and the three bears",
+                        "Hansel and Gretel",
+                        "Mary had a little lamb"
+                },
+                {
+                        "/goldilocks.txt",
+                        "/hansel_and_gretel.txt",
+                        "/mary_had_a_little_lamb.txt"
+                }
+        };
+
         Scanner userPrompt = new Scanner(System.in);
 
-        // ask user to choose one of the three stories
-        System.out.println("1: Goldilocks and the Three Bears \n 2: Hansel and Gretel \n 3: Mary had a Little Lamb.");
-        System.out.println("\n Choose a number 1-3 to choose a bedtime story to read: ");
+        for (i = 0; i < books[0].length; ++i) {
+            System.out.println((i + 1) + ": " + books[0][i]);
+        }
+        System.out.println("\n Choose a number 1 - " + books[1].length + " to choose a bedtime story to read: ");
         int userInput = userPrompt.nextInt();
 
-        // switch case to handle user input
-        switch (userInput) {
-            case 1:
-                readStory("/DataFiles/goldilocks.txt");
-                break;
-            case 2:
-                readStory("/DataFiles/hansel_and_gretel.txt");
-                break;
-            case 3:
-                readStory("/DataFiles/mary_had_a_little_lamb.txt");
-                break;
-            default:
-                System.err.println("ERROR: Please choose a number between 1-3!");
+        if(userInput > 0 && userInput <= books[1].length){
+            readStory(books[1][userInput-1]);
+        } else {
+            System.err.println("ERROR: User input out of bounds!");
         }
+
     }
 
     // Method to print out story
