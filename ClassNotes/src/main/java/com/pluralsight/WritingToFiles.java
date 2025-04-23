@@ -9,13 +9,14 @@ public class WritingToFiles {
 
         try{
             //open the file writer
-            FileWriter writer = new FileWriter("skills.txt");
+            FileWriter writer = new FileWriter("\\Users\\rosen\\pluralsight\\workbook-3\\ClassNotes\\src\\main\\resources\\skills.txt");
 
             //write to the file
             writer.write("Skills: \n");
             writer.write("Git, HTML, CSS, Bootstrap\n");
             writer.write("JavaScript/ES6, jQuery, REST API, Node.js\n");
-            writer.write("Python, Java");
+            writer.write("Python, Java\n");
+            writer.write("Kevin Rosengren");
 
             //close the writer when done
             writer.close();
