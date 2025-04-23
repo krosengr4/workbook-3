@@ -12,23 +12,33 @@ public class SearchEngineLogger {
 
         //Create new instance of logger pointing to right file
         Logger logger = new Logger("C:\\Users\\rosen\\pluralsight\\workbook-3\\SearchEngineLogger\\src\\main\\resources\\logs.txt");
-        logger.logAction("Launch", logTime + "\n");
+        logger.logAction("\n" + "Launch", logTime + "\n");
 
         //Create instance of scanner
         Scanner myScanner = new Scanner(System.in);
 
         while(true){
+            //get current time
+            dateTime = LocalDateTime.now();
+            gmt = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            logTime = dateTime.format(gmt);
+
             //Prompt user
             System.out.println("Enter a search term (X to exit): ");
             String userInput = myScanner.nextLine();
 
             //if user inputs x or X, exit the app
             if(userInput.equalsIgnoreCase("x")){
-                logger.logAction("Exit", logTime);
+                logger.logAction("Exit", logTime + "\n--------------------------------------------");
                 System.out.println("Exiting application. Thank you! :)");
                 break;
 
             } else {
+                //Get the current time
+                dateTime = LocalDateTime.now();
+                gmt = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+                logTime = dateTime.format(gmt);
+
                 // log and print what user searches for
                 logger.logAction(logTime + " ",  "Searching: " + userInput + "\n");
                 System.out.println("Searching for: " + userInput);

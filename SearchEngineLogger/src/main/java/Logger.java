@@ -12,7 +12,7 @@ public class Logger {
     public void logAction(String logTime, String userAction) {
         try {
             FileWriter writer = new FileWriter(logFile, true);
-            writer.write(logTime + " - " + userAction + "\n");
+            writer.write(logTime + " - " + userAction);
 
             writer.close();
         } catch (IOException e) {

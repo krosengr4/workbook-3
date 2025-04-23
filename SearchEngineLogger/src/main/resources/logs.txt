@@ -1,15 +1,17 @@
 
-Launch - 2025-04-23 15:05:50
-
-2025-04-23 15:05:50  - Searching: Hello everyone 
-
-2025-04-23 15:05:50  - Searching: this is kevin
-
-2025-04-23 15:05:50  - Searching: I have a new logger!
-
-Exit - 2025-04-23 15:05:50
-Launch - 2025-04-23 15:10:06
-
-2025-04-23 15:10:06  - Searching: This is my logger boyyyyy
-
-Exit - 2025-04-23 15:10:06
+Launch - 2025-04-23 16:55:49
+2025-04-23 16:55:53  - Searching: How do birds fly
+2025-04-23 16:55:55  - Searching: how old am i
+2025-04-23 16:55:58  - Searching: what is paper
+Exit - 2025-04-23 16:55:58
+ ------------------------------------------
+Launch - 2025-04-23 16:56:04
+2025-04-23 16:56:07  - Searching: This is kevin
+2025-04-23 16:56:12  - Searching: How is my cat doing
+Exit - 2025-04-23 16:56:12
+ ------------------------------------------
+Launch - 2025-04-23 16:56:17
+2025-04-23 16:56:21  - Searching: This is try number 3
+2025-04-23 16:56:25  - Searching: woohoo!
+Exit - 2025-04-23 16:56:25
+ ------------------------------------------
