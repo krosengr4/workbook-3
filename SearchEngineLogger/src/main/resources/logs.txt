@@ -8,3 +8,8 @@ Launch - 2025-04-23 15:05:50
 2025-04-23 15:05:50  - Searching: I have a new logger!
 
 Exit - 2025-04-23 15:05:50
+Launch - 2025-04-23 15:10:06
+
+2025-04-23 15:10:06  - Searching: This is my logger boyyyyy
+
+Exit - 2025-04-23 15:10:06

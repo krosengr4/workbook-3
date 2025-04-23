@@ -1,1 +1,10 @@
 
+Launch - 2025-04-23 15:05:50
+
+2025-04-23 15:05:50  - Searching: Hello everyone 
+
+2025-04-23 15:05:50  - Searching: this is kevin
+
+2025-04-23 15:05:50  - Searching: I have a new logger!
+
+Exit - 2025-04-23 15:05:50
