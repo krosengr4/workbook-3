@@ -26,5 +26,4 @@ public class FormatDates {
         System.out.println("Today's date: " + fullMonthName);
         System.out.println("Date and Time: " + gmtTime);
     }
-
 }
