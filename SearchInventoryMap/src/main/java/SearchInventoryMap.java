@@ -10,7 +10,7 @@ public class SearchInventoryMap {
         String filePath = "SearchInventoryMap/src/main/resources/inventory.csv";
 
         //have inventory HashMap call loadInventory method
-        HashMap<String, Product> inventory = loadInventory(filePath);
+        HashMap<String, StoreProduct> inventory = loadInventory(filePath);
 
         //Get user input
         Scanner myScanner = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class SearchInventoryMap {
         String userInput = myScanner.nextLine();
 
         //Match the user input to the product name. Print product if it is in inventory HashMap
-        Product matchProduct = inventory.get(userInput);
+        StoreProduct matchProduct = inventory.get(userInput);
         if (matchProduct == null) {
             System.out.println("We don't have that product in stock");
         } else {
@@ -27,10 +27,10 @@ public class SearchInventoryMap {
     }
 
     //Method to read inventory.csv and add to inventory HashMap
-    private static HashMap<String, Product> loadInventory(String filePath) {
+    private static HashMap<String, StoreProduct> loadInventory(String filePath) {
 
         //Create new HashMap for inventory
-        HashMap<String, Product> inventory = new HashMap<String, Product>();
+        HashMap<String, StoreProduct> inventory = new HashMap<String, StoreProduct>();
 
         try {
             //Open FileReader and BufferedFileReader
@@ -50,7 +50,7 @@ public class SearchInventoryMap {
                 double productPrice = Double.parseDouble(lineData[2]);
 
                 //Create new product and put new product in inventory HashMap
-                Product newProduct = new Product(productId, productName, productPrice);
+                StoreProduct newProduct = new StoreProduct(productId, productName, productPrice);
                 inventory.put(newProduct.getName(), newProduct);
             }
 
