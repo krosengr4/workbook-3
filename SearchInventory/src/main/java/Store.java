@@ -11,8 +11,6 @@ public class Store {
 
         ArrayList<Product> inventory = getInventory(filePath);
 
-        Scanner myScanner = new Scanner(System.in);
-
         System.out.println("We carry the following inventory: ");
 
         //For loop that prints out every product's attributes
@@ -27,24 +25,29 @@ public class Store {
         ArrayList<Product> inventory = new ArrayList<Product>();
 
         try{
+            //Open FileReader and BufferedReader
             FileReader reader = new FileReader(filePath);
             BufferedReader bufReader = new BufferedReader(reader);
             String input;
 
+            //read each line
             while((input = bufReader.readLine()) != null) {
+                //Split each line at "|"
                 String[] lineData = input.split("\\|");
 
+                //Create new variables for each line part
                 int productId = Integer.parseInt(lineData[0]);
                 String productName = lineData[1];
                 double productPrice = Double.parseDouble(lineData[2]);
 
+                //Create new product and add it to inventory array list
                 Product newProduct = new Product(productId, productName, productPrice);
                 inventory.add(newProduct);
             }
-
         } catch (Exception e) {
             System.err.println("ERROR: " + e.getMessage());
         }
+        //return inventory array list
         return inventory;
     }
 }
