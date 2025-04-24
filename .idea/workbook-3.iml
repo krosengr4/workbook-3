@@ -23,6 +23,9 @@
       <sourceFolder url="file://$MODULE_DIR$/SearchInventory/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SearchInventory/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/SearchInventory/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/SearchInventoryMap/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SearchInventoryMap/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/SearchInventoryMap/src/test" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
