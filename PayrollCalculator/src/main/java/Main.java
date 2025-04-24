@@ -8,7 +8,7 @@ public class Main {
 
         FileReader reader;
         try {
-            reader = new FileReader("/Users/rosen/pluralsight/workbook-3/PayrollCalculator/src/main/resources/DataFiles/employees.csv");
+            reader = new FileReader("PayrollCalculator/src/main/resources/DataFiles/employees.csv");
             String input;
             BufferedReader bufferedReader = new BufferedReader(reader);
 
