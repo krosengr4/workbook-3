@@ -47,7 +47,4 @@ public class Employee {
     public double calculateGrossPay() {
         return this.hoursWorked * this.payRate;
     }
-
-
-
 }
