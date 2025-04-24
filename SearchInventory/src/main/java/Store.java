@@ -1,13 +1,12 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Store {
 
     public static void main(String[] args) {
         //Create file path for inventory csv
-        String filePath = "SearchInventory/src/main/resources/inventory.csv";
+        String filePath = "src/main/resources/inventory.csv";
 
         ArrayList<Product> inventory = getInventory(filePath);
 

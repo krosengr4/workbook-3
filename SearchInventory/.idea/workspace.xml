@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc09786-3ca4-43c2-8349-daeba3c2e6a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SearchEngineLogger/src/main/resources/logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SearchEngineLogger/src/main/java/SearchEngineLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchEngineLogger/src/main/java/SearchEngineLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/workbook-3/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/workbook-3/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PayrollCalculator/src/main/resources/DataFiles/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../PayrollCalculator/src/main/resources/DataFiles/products.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchInventoryMap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchInventoryMap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchInventoryMap/src/main/java/SearchInventoryMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchInventoryMap/src/main/java/SearchInventoryMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/workbook-3/DataFiles/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/workbook-3/DataFiles/products.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,21 +20,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2w8qOhPiFn6rjbAEGfINOZTsJ3J" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Store.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="acc09786-3ca4-43c2-8349-daeba3c2e6a6" name="Changes" comment="" />
