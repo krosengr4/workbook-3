@@ -7,7 +7,7 @@ public class SearchInventoryMap {
 
     public static void main(String[] args) {
         //Add file path for inventory csv
-        String filePath = "SearchInventoryMap/src/main/resources/inventory.csv";
+        String filePath = "src/main/resources/inventory.csv";
 
         //have inventory HashMap call loadInventory method
         HashMap<String, StoreProduct> inventory = loadInventory(filePath);
