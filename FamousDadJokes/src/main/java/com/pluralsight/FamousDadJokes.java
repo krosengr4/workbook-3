@@ -8,29 +8,31 @@ public class FamousDadJokes {
 
         //Create an array with dad jokes
         String[] dadJokes = {
-                "What do you call a magician who lost his magic? \n Ian. ",
-                "How do computers get drunk? \n They take screenshots. ",
-                "Why don't eggs tell each other jokes? \n Because they'd crack each other up. ",
-                "I only know 26 letters of the alphabet. \n I don't know y. ",
-                "Why can't your nose be 12 inches long? \n Because then it would be a foot! ",
-                "I am reading a book on anti-gravity. \n It is impossible to put down. ",
-                "I told my wife she was drawing on her eye brows too high. \n She looked surprised. ",
-                "Why do cows where bells? \n Because their horns don't work. ",
-                "How does a penguin build its house? \n Igloos it together. ",
-                "Why don't skeletons fight each other? \n They don't have the guts."
+                "What do you call a magician who lost his magic? \n \tIan. ",
+                "How do computers get drunk? \n \tThey take screenshots. ",
+                "Why don't eggs tell each other jokes? \n \tBecause they'd crack each other up. ",
+                "I only know 26 letters of the alphabet. \n \tI don't know y. ",
+                "Why can't your nose be 12 inches long? \n \tBecause then it would be a foot! ",
+                "I am reading a book on anti-gravity. \n \tIt is impossible to put down. ",
+                "I told my wife she was drawing on her eye brows too high. \n \tShe looked surprised. ",
+                "Why do cows where bells? \n \tBecause their horns don't work. ",
+                "How does a penguin build its house? \n \tIgloos it together. ",
+                "Why don't skeletons fight each other? \n \tThey don't have the guts.",
+                "My girlfriend told me I had to stop doing my flamingo impersonation. " +
+                        "\n\tI finally had to put my foot down."
         };
 
         //Open scanner
         Scanner myScanner = new Scanner(System.in);
 
         try {
-            //User choice determine wether to stay in loop or exit app
+            //User choice determine whether to stay in loop or exit app
             String userChoice = "y";
 
             //While loop to prompt user to hear more dad jokes
             while (userChoice.equalsIgnoreCase("y")) {
                 //Get user input
-                System.out.println("Choose a number from 1-10 for a dad joke: ");
+                System.out.println("Choose a number from 1 - " + dadJokes.length + " for a dad joke: ");
                 int jokeNumber = myScanner.nextInt();
 
                 //Switch case to determine which joke to print out
@@ -65,8 +67,11 @@ public class FamousDadJokes {
                     case 10:
                         System.out.println(dadJokes[9]);
                         break;
+                    case 11:
+                        System.out.println(dadJokes[10]);
+                        break;
                     default:
-                        System.out.println("ERROR! Must print a number between 1-10");
+                        System.out.println("ERROR! Must print a number between 1-" +dadJokes.length);
                 }
 
                 //Get user input if they want to hear another joke
