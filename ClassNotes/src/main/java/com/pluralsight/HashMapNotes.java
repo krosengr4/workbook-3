@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class HashMapNotes {
@@ -11,8 +12,11 @@ public class HashMapNotes {
 
         //Calling methods
         addingAndRemoving();
+        System.out.println("\n");
         lookingUpItems();
         iterateThrough();
+
+        forLoop();
     }
 
     //! How to add and remove key/value pairs
@@ -64,7 +68,18 @@ public class HashMapNotes {
         //To get only the values
         for(String value : statesAndCapitals.values()) {
             System.out.println(value);
+
         }
 
+    }
+
+    private static void forLoop() {
+        ArrayList<String> people = new ArrayList<String>();
+        people.add("Million");
+        people.add("kevin");
+
+        for(String person : people){
+            System.out.println(person);
+        }
     }
 }
