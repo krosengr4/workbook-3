@@ -16,7 +16,6 @@ public class HashMapNotes {
         lookingUpItems();
         iterateThrough();
 
-        forLoop();
     }
 
     //! How to add and remove key/value pairs
@@ -69,17 +68,6 @@ public class HashMapNotes {
         for(String value : statesAndCapitals.values()) {
             System.out.println(value);
 
-        }
-
-    }
-
-    private static void forLoop() {
-        ArrayList<String> people = new ArrayList<String>();
-        people.add("Million");
-        people.add("kevin");
-
-        for(String person : people){
-            System.out.println(person);
         }
     }
 }
